@@ -1,0 +1,41 @@
+/**Header****/
+.to{
+    background-color:rgba(8, 160, 8, 0.781) ;
+    color: white;
+}
+
+
+/**Section***/
+.se{
+    margin: auto;
+    width: 400px;
+    margin-top: 15px;
+    text-align: center;
+    border: 5px;
+}
+.el{
+    top: 0px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(8, 160, 8, 0.781) ;
+}
+.k{
+    margin: auto;
+}
+
+
+/****Screeenn***/
+@media only screen and (max-width: 600px) {
+    .se{
+        margin: auto;
+        width: 300px;
+        margin-top: 15px;
+        text-align: center;
+        border: 5px;
+    }
+
+}

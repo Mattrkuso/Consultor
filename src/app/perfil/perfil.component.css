@@ -1,0 +1,188 @@
+/***Header****/
+.to{
+    background-color:rgba(8, 160, 8, 0.781) ;
+    color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.io{
+    margin-top: 12px;
+}
+#i{
+    font-size: 25px;
+}
+.yu{
+    margin-left: 10px;
+    
+}
+.mes{
+    right: 140px;
+    position: absolute;
+    top: 15px;
+}
+.bell{
+    right: 95px;
+    position: absolute;
+    top: 15px;
+}
+.imh{
+    right: 35px;
+    position: absolute;
+    top: 15px;
+}
+.arro{
+    position: absolute;
+    right: 16px;
+    top: 15px;
+
+}
+.conf{
+    font-weight: 500;
+    margin-left: 5px;
+}
+/***Section****/
+.r{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    margin-top: 10px;
+    height: 450px;
+}
+.t{
+    position: absolute;
+    left: 10px;
+    margin-top:500px ;
+    width: 300px;
+    height: 300px;
+}
+.y{
+    position: absolute;
+    left: 400px;
+    width: 400px;
+    height: 300px;
+    margin-top: 500px;
+}
+.u{
+    position: absolute;
+    left: 900px;
+    width: 390px;
+    height: 300px;
+    margin-top: 500px;
+}
+
+/***Sidenav***/
+
+.example-container {
+   width: 100%;
+   height: 90%;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    width: 300px;
+  }
+
+  .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  #lo{
+      margin-left: 105px;
+  }
+  /***Mat Card***/
+
+  .example-card {
+    max-width: 200px;
+    max-height: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  #ji{
+      color: black;
+      font-size: 25px;
+      margin-left: 50px;
+
+  }
+  .div{
+      width: 25%;
+      position: absolute;
+  }
+
+  /*****Datos*****/
+  .dat{
+      left:300px;
+      top: 10px;
+      width: 800px; 
+      height: 500px;
+      position: absolute;
+
+  }
+  .tota{
+      width: 300px;
+  }
+  .tio{
+      background-color: greenyellow;
+      font-weight: 900;
+  }
+  .nom{
+      margin-left: 0px;
+      position: absolute;
+  }
+  /***Grafico***/
+  .graf{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 480px;
+      text-align: center;
+      font-weight: 900;
+      height: 320px;
+  }
+
+
+  /***Screen***/
+  @media only screen and (max-width: 600px) {
+
+    .dat{
+        width: 300px;
+        left: 15px;
+        top: 520px;
+        margin-bottom: 15px;
+        height: 900px;
+    }
+    .graf{
+        margin-top: 500px;
+        width: 300px;
+        margin-bottom: 5px;
+    }
+    .desc{
+        margin-top: -180px;
+        position: absolute;
+    }
+    .example-card{
+        margin: auto;
+        margin-top: 10px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+   /***Tools***/
+   a:link{
+
+    text-decoration: none;
+  }
+
+    

@@ -1,0 +1,40 @@
+<mat-toolbar class="to">
+    <span>
+         <h3>Bienvenido Matias</h3>
+    </span>
+</mat-toolbar>
+
+<mat-card class="se">
+    <mat-toolbar class="el"><h3 class="k">Consultor</h3></mat-toolbar>
+    <br><br>
+    <br>
+    <form action="" method="POST">
+        <h4>Seleccione una carrera</h4>
+        <mat-form-field appearance="outlines">
+            <mat-label>Seleccione</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="food">
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p> Carrera: {{selectedValue}} </p>
+        <button type="submit" mat-raised-button>Ingresar</button>
+    </form>
+    <br>
+    <img src="assets/logo_une33.png" alt="une" width="50px" height="40px">
+    <br><br><p style="font-weight: 500;">
+    Aplicativo desarrollado por la
+    <br>
+    Dirección General de Tecnología e Innovación
+    del
+    <br> Rectorado de la Universidad Nacional
+    del Este.</p>
+    <br>
+    <p style="font-weight: 500;">Equipo de Desarrollo Sistema UNESYS</p>
+    <p style="font-weight: 500;">Matias Isaac Frutos</p>
+    <p style="font-weight: 500;">Cristian Omar González</p>
+</mat-card>
+
+
+<a [routerLink]="['/inicio']" routerLinkActive="router-link-active" >asdasdasd</a>

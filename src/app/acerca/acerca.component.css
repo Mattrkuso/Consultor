@@ -1,0 +1,22 @@
+.mat-toolbar{
+    background-color: rgba(8, 160, 8, 0.781);
+
+}
+.ti{
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+
+
+/***Contenedor***/
+.pres{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}

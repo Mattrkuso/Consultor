@@ -1,0 +1,61 @@
+.too{
+    background-color: rgba(8, 160, 8, 0.781);
+    color: white;
+}
+.tii{
+    width: 300px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.con{
+    background-color:rgba(8, 160, 8, 0.781) ;
+    height:30px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 600;
+}
+.toe{
+    background-color: rgba(8, 160, 8, 0.781);
+    color: white;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.ti{
+    color: white;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .too{
+        background-color: rgba(8, 160, 8, 0.781);
+        color: white;
+    }
+    .tii{
+        width: 300px;
+        margin: auto;
+        margin-top: 15px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .con{
+        background-color:rgba(8, 160, 8, 0.781) ;
+        height:30px;
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-weight: 600;
+    }
+    .ti{
+        color: white;
+        margin: auto;
+    }
+    .toe{
+        background-color: rgba(8, 160, 8, 0.781);
+        color: white;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+}

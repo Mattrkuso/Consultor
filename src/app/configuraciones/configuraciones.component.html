@@ -1,0 +1,261 @@
+<mat-toolbar class="to">
+  <p class="io"><i id="i" class="fas fa-bars" (click)="drawer.toggle()"></i></p>
+  <span class="yu"><a style="color: white;" [routerLink]="['/inicio']"
+      routerLinkActive="router-link-active">Inicio</a></span>
+  <div class="not">
+
+    <p class="mes"><i class="far fa-envelope" [matMenuTriggerFor]="menu"></i></p>
+    <mat-menu #menu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+
+    <p class="bell"><i class="far fa-bell" [matMenuTriggerFor]="menuu"></i></p>
+    <mat-menu #menuu="matMenu" xPosition="before">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+
+    <div>
+      <img class="imh" [matMenuTriggerFor]="menuuu" src="assets/Forma 2.png" alt="user" name="user" width="35px"
+        height="30px" style="border-radius:50px ;">
+      <p class="arro"><i class="fas fa-angle-down"></i></p>
+      <mat-menu #menuuu="matMenu" xPosition="before">
+        <div class="sub">
+          <p class="conf">Configuración</p>
+        </div>
+        <mat-divider></mat-divider>
+        <button mat-menu-item><a [routerLink]="['/perfil']" routerLinkActive="router-link-active">Perfil</a></button>
+        <button mat-menu-item>Ajustes</button>
+        <button mat-menu-item>Pagos</button>
+        <button mat-menu-item>Mensajes</button>
+        <mat-divider></mat-divider>
+        <br>
+        <div>
+          <p class="conf">Información</p>
+        </div>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>Acerca</button>
+        <button mat-menu-item>Salir</button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
+
+
+<!--Sidenvav-->
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <img id="lo" src="assets/logo_une33.png" alt="une" width="50px" height="40px">
+    <br>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right: 10px;"><i class="fas fa-hand-holding-usd"></i></span> Pagos
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right: 10px;"><i class="fas fa-chalkboard-teacher"></i></span> Asistencia
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right: 10px;"><i class="fas fa-exclamation-triangle"></i></span> Alertas
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right: 10px;"><i class="fas fa-file-alt"></i></span> Evaluaciones
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right: 10px;"><i class="fas fa-graduation-cap"></i></span> Inscripciones
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right:10px;"><i class="fas fa-comment-alt"></i></span> Mensajes
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right: 10px;"><i class="fas fa-coins"></i></span> Deudas
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <span style="margin-right: 10px;"><i class="fas fa-calendar-check"></i></span> Inscripciones al Periodo
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+
+    <mat-card class="im">
+      <p id="tip">Foto de perfil</p>
+      <img id="pic" style="border-radius: 60px; width: 120px; height: 120px; "
+        src="assets/Anotación 2020-07-04 092639.png" alt="">
+      <br><br><mat-divider></mat-divider>
+      <button mat-button><i class="fas fa-upload"></i></button>
+      <button mat-button><i id="g" class="fas fa-folder"></i></button>
+      <button mat-button><i class="fas fa-trash"></i></button>
+      <br><mat-divider></mat-divider>
+      <br>
+      <span style="font-weight: 700;">
+        Aqui puedes cargar o eliminar <br> tu foto de perfil. <br>
+        El tamaño maximo 20MB
+      </span>
+    </mat-card>
+    <mat-card class="general">
+      <table cellspacing="10" cellpadding="10">
+        <th class="the">
+          <p>Nombre</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input matInput type="text" placeholder="ingrese su nombre completo">
+          </mat-form-field>
+        </th>
+        <th class="thu">
+          <p>Correo</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Correo</mat-label>
+            <input matInput type="email" placeholder="ingrese su correo">
+          </mat-form-field>
+        </th>
+        <th class="thi">
+          <p>Pais</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Pais</mat-label>
+            <input matInput type="text" placeholder="ingrese su pais">
+          </mat-form-field>
+        </th>
+        <th class="w">
+          <p>Edad</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Edad</mat-label>
+            <input matInput type="number" placeholder="ingrese su edad">
+          </mat-form-field>
+        </th>
+      </table>
+      <table cellspacing="10" cellpadding="10">
+        <th class="po">
+          <p>Contacto</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Telefono</mat-label>
+            <input matInput placeholder="Telefono">
+          </mat-form-field>
+        </th>
+        <th class="pi">
+          <p>Fecha de nacimiento</p>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Selecione una fecha</mat-label>
+            <input matInput [matDatepicker]="picker" placeholder="Ingrese una fecha">
+            <mat-datepicker-toggle matSuffix [for]="picker">
+              <mat-icon matDatepickerToggleIcon>
+                <i class="fas fa-calendar-day"></i>
+              </mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </th>
+        <th class="pe">
+          <p>Ciudad</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Ciudad</mat-label>
+            <input matInput type="text" placeholder="ingrese su ciudad">
+          </mat-form-field>
+        </th>
+        <th class="pn">
+          <p>Ocupacion</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Ocupacion</mat-label>
+            <input matInput type="text" placeholder="ingrese su ocupacion">
+          </mat-form-field>
+        </th>
+      </table>
+      <table cellspacing="10" cellpadding="10">
+        <th class="we">
+          <p>Descripcion del Perfil</p><br>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese una descripcion para su perfil"></textarea>
+        </th>
+        <th class="wu">
+          <p>Contraseña </p>
+          <mat-form-field appearance="outline">
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password" placeholder="ingrese una contraseña">
+          </mat-form-field>
+        </th>
+        <th class="wi">
+          <p>Facebook</p>
+          <mat-form-field appearance="outline">
+            <mat-label>facebook</mat-label>
+            <input matInput type="text" placeholder="ingrese su url">
+          </mat-form-field>
+        </th>
+        <th class="wo">
+          <p>Twitter</p>
+          <mat-form-field appearance="outline">
+            <mat-label>Twitter</mat-label>
+            <input matInput placeholder="ingrese su url">
+          </mat-form-field>
+        </th>
+      </table>
+      <button class="but"  type="submit" mat-raised-button>Enviar</button>
+
+    </mat-card>
+  </div>
+
+</mat-drawer-container>
