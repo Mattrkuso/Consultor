@@ -8,6 +8,7 @@ import { ConfiguracionesComponent } from './configuraciones/configuraciones.comp
 import { DeudasComponent } from './deudas/deudas.component';
 import { PagosComponent } from './pagos/pagos.component';
 import { AcercaComponent } from './acerca/acerca.component';
+import { MensajesComponent } from './mensajes/mensajes.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'configuraciones', component:ConfiguracionesComponent},
   {path:'deudas',component:DeudasComponent},
   {path:'pago', component:PagosComponent},
-  {path:'acerca', component:AcercaComponent}
+  {path:'acerca', component:AcercaComponent},
+  {path:'mensajes', component:MensajesComponent}
 ];
 
 @NgModule({

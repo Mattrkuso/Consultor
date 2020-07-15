@@ -27,17 +27,17 @@
           <p class="conf">Configuración</p>
         </div>
         <mat-divider></mat-divider>
-        <button mat-menu-item><a [routerLink]="['/perfil']" routerLinkActive="router-link-active">Perfil</a></button>
+        <button mat-menu-item><a style="color: black;" [routerLink]="['/perfil']" routerLinkActive="router-link-active">Perfil</a></button>
         <button mat-menu-item>Ajustes</button>
-        <button mat-menu-item>Pagos</button>
-        <button mat-menu-item>Mensajes</button>
+        <button mat-menu-item><a style="color: black;" [routerLink]="['/pago']" routerLinkActive="router-link-active" >Pago</a></button>
+        <button mat-menu-item><a style="color:black;" [routerLink]="['/mensajes']" routerLinkActive="router-link-active" >Mensajes</a></button>
         <mat-divider></mat-divider>
         <br>
         <div>
           <p class="conf">Información</p>
         </div>
         <mat-divider></mat-divider>
-        <button mat-menu-item>Acerca</button>
+        <button mat-menu-item><a style="color: black;" [routerLink]="['/acerca']" routerLinkActive="router-link-active" >Acerca</a></button>
         <button mat-menu-item>Salir</button>
       </mat-menu>
     </div>

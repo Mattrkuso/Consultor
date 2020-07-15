@@ -101,4 +101,80 @@
         </table>
     </div>
 
+    <div class="conta">
+         <mat-card class="inf">
+
+         </mat-card>
+         <mat-card class="form">
+          <mat-accordion class="example-headers-align">
+            <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Nombre/Correo
+                </mat-panel-title>
+                <mat-panel-description>
+                  Ingrese sus datos
+                  <mat-icon>account_circle</mat-icon>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          
+              <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput type="text">
+              </mat-form-field>
+          
+              <mat-form-field appearance="outline">
+                <mat-label>Correo</mat-label>
+                <input matInput type="email">
+              </mat-form-field>
+              <mat-action-row>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+              </mat-action-row>
+            </mat-expansion-panel>
+          
+            <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                 Asunto
+                </mat-panel-title>
+                <mat-panel-description>
+                  Ingrese el asunto
+                  <mat-icon>Asunto</mat-icon>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          
+              <mat-form-field appearance="outline">
+                <mat-label>Asunto</mat-label>
+                <input matInput type="text">
+              </mat-form-field>
+          
+              <mat-action-row>
+                <button mat-button color="warn" (click)="prevStep()">Anterior</button>
+                <button mat-button color="primary" (click)="nextStep()">Siguiente</button>
+              </mat-action-row>
+            </mat-expansion-panel>
+          
+            <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  Mensaje
+                </mat-panel-title>
+                <mat-panel-description>
+                  Ingrese su mensaje
+                  <mat-icon>message</mat-icon>
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+          
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+          
+              <mat-action-row>
+                <button mat-button color="warn" (click)="prevStep()">Anterior</button>
+                <button mat-button color="primary" (click)="nextStep()">Enviar</button>
+              </mat-action-row>
+            </mat-expansion-panel>
+          
+          </mat-accordion>
+          
+         </mat-card>
+    </div>
 </mat-card>

@@ -62,6 +62,7 @@ import { DeudasComponent } from './deudas/deudas.component';
 import { PagosComponent } from './pagos/pagos.component';
 import { AcercaComponent } from './acerca/acerca.component';
 import { ConfiguracionesComponent } from './configuraciones/configuraciones.component';
+import { MensajesComponent } from './mensajes/mensajes.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { ConfiguracionesComponent } from './configuraciones/configuraciones.comp
     DeudasComponent,
     PagosComponent,
     AcercaComponent,
-    ConfiguracionesComponent
+    ConfiguracionesComponent,
+    MensajesComponent
   ],
   imports: [
     BrowserModule,
